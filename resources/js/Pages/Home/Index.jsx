@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function Index(){
     return(
         <Layout>
-        <div>
-            <h3>This is Home...</h3>
+        <div className=''>
+            <h3>This is the sample crud Home...</h3>
         </div>
         </Layout>
     )

@@ -1,0 +1,28 @@
+/* Apply a global reset to eliminate default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Optional: If the body has unexpected padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the height of html and body to fill the viewport */
+html, body {
+    height: 100%;
+}
+
+
+/* CSS to ensure proper spacing */
+.container {
+    max-width: 1325px; /* Max width for large screens */
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}

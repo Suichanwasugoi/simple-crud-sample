@@ -25,8 +25,8 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about', [AboutController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
 
-Route::get('/simplecrud/add', [SimpleCrudController::class, 'formAdd']);
 Route::resource('/simplecrud', SimpleCrudController::class);
+Route::get('/simplecrud/form/add', [SimpleCrudController::class, 'formAdd']);
 Route::get('/simplecrud/{id}/edit', [SimpleCrudController::class, 'edit'])->name('simplecrud.edit');
 Route::put('/simplecrud/{id}', [SimpleCrudController::class, 'update'])->name('simplecrud.update');
 Route::delete('/simplecrud/{id}', [SimpleCrudController::class, 'destroy'])->name('simplecrud.destroy');
